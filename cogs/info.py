@@ -26,7 +26,7 @@ class Information(commands.Cog):
     @commands.command(aliases=['joinme', 'join', 'botinvite'])
     async def invite(self, ctx):
         """ Invite me to your server """
-        await ctx.send(f"https://discord.com/api/oauth2/authorize?client_id=710420073432743996&permissions=8&scope=bot")
+        await ctx.send(f"https://discord.com/api/oauth2/authorize?client_id=710420073432743996&permissions=2147483639&scope=bot")
 
 
 
