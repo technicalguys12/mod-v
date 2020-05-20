@@ -141,7 +141,7 @@ class Admin(commands.Cog):
                 activity=discord.Activity(type=playing_type, name=playing),
                 status=status_type
             )
-            dataIO.change_value("config.json", "playing", playing)
+            
             await ctx.send(f"Successfully changed playing status to **{playing}**")
         except discord.InvalidArgument as err:
             await ctx.send(err)
