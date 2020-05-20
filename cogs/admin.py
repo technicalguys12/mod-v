@@ -147,6 +147,7 @@ class Admin(commands.Cog):
             await ctx.send(err)
         except Exception as e:
             await ctx.send(e)
+            
     @change.command(name="username")
     @commands.check(permissions.is_owner)
     async def change_username(self, ctx, *, name: str):
