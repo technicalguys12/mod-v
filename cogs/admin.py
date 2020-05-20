@@ -114,7 +114,7 @@ class Admin(commands.Cog):
         if ctx.invoked_subcommand is None:
             await ctx.send_help(str(ctx.command))
 
-    @change.command(name="playing")
+    @change.command(name="activity")
     @commands.check(permissions.is_owner)
     async def change_playing(self, ctx, status: str, game : str, *, playing: str):
         """ Change playing status. """
@@ -142,7 +142,7 @@ class Admin(commands.Cog):
                 status=status_type
             )
             
-            await ctx.send(f"Successfully changed playing status to **{playing}**")
+            await ctx.send(f"Successfully changed activity to **{playing}** \n status to {status}")
         except discord.InvalidArgument as err:
             await ctx.send(err)
         except Exception as e:
