@@ -28,9 +28,6 @@ class Information(commands.Cog):
         """ Invite me to your server """
         await ctx.send(f"https://discord.com/api/oauth2/authorize?client_id=710420073432743996&permissions=2147483639&scope=bot")
 
-    @commands.command(aliases=['server', 'serverinvite', 'dashboard'])
-    async def server(self, ctx):
-    await ctx.send(f"https://discord.gg/CgRebJV")
 
 
 def setup(bot):
